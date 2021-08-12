@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(185, 41%, 84%);
+}
+
+.section-name {
+  color: hsl(186, 14%, 43%);
+  margin-left: 27px;
+  font-size: 0.5rem;
+}
+
+.names {
+  font-size: 0.75rem;
+}
+
+input {
+  margin-left: 27px;
+  height: 30px;
+  border: hidden;
+  text-align: right;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+}
+
+.bill-input {
+  background: url("/images/icon-dollar.svg") no-repeat center left;
+  background-color: hsl(189, 41%, 97%);
+}
+.people-input {
+  background: url("/images/icon-person.svg") no-repeat center left;
+  background-color: hsl(189, 41%, 97%);
+}
+.whenZero {
+  border: 2px solid tomato;
+}
+
+.logo-image {
+  display: block;
+  margin: 50px auto;
+  width: 6.55%;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  width: 70%;
+  height: 70vh;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 50%;
+}
+
+.bill-section {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.tip-section {
+  display: grid;
+  margin-bottom: 60px;
+}
+
+.no-of-people-section {
+  margin-bottom: 20px;
+}
+
+.tip-button-section {
+  display: grid;
+  grid-template-columns: 140px 140px 140px;
+  margin: 0 30px;
+}
+
+#custom {
+  width: 100px;
+  height: 45px;
+  margin: 5px;
+  border: hidden;
+}
+
+#custom[placeholder] {
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 50px;
+}
+
+.tip-button button {
+  width: 100px;
+  height: 45px;
+  margin: 5px;
+  background-color: hsl(183, 100%, 15%);
+  border: hidden;
+  border-radius: 10px;
+  color: white;
+  font-weight: 400;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.tip-button button:hover {
+  background: hsl(172, 70%, 59%);
+}
+
+.section-name {
+  display: flex;
+}
+.ifZero {
+  color: tomato;
+  display: none;
+  text-align: right;
+  margin-left: 30px;
+}
+
+/* right */
+
+.right {
+  display: grid;
+  grid-template-areas:
+    "tip tip-result"
+    "total amount-result"
+    "reset reset";
+  width: 50%;
+  background: hsl(183, 100%, 15%);
+  margin: 20px;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+}
+
+.total-tip {
+  grid-area: tip;
+  margin-bottom: 20px;
+}
+
+.tip-result {
+  grid-area: tip-result;
+  color: hsl(172, 67%, 45%);
+  margin-bottom: 20px;
+}
+
+.tip-result h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.total-tip h4 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.total {
+  grid-area: total;
+  margin-bottom: 20px;
+}
+
+.total h4 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.amount-result {
+  grid-area: amount-result;
+  color: hsl(172, 67%, 45%);
+  margin-bottom: 20px;
+}
+.amount-result h3 {
+  text-align: right;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.reset {
+  grid-area: reset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 75px 20px 0 0;
+}
+
+.reset-button {
+  width: 80%;
+  height: 50px;
+  background: hsl(182, 78%, 19%);
+  color: hsl(183, 100%, 15%);
+  border: hidden;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: not-allowed;
+}
+
+.reset-button:hover {
+  background-color: hsl(170, 72%, 34%);
+}
+
+.reset-active {
+  cursor: pointer;
+  background: hsl(172, 67%, 45%);
+}
+
+.active {
+  background: hsl(171, 94%, 47%);
+}
+
+p {
+  color: hsl(186, 14%, 43%);
+  font-size: 0.75rem;
+}
