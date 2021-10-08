@@ -17,7 +17,7 @@ const totalCalculator = function (bill, peopleCount, tipPerPerson) {
   const total = bill / peopleCount + tipPerPerson;
   return total;
 };
-console.log(totalCalculator(555, 8, tipCalculator(50, 555, 8)));
+
 
 const reset = function () {
   billInput.addEventListener("input", function () {
