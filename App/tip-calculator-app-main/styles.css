@@ -74,16 +74,16 @@ input {
 
 .bill-section {
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
 
 .tip-section {
   display: grid;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
 
 .no-of-people-section {
-  margin-bottom: 20px;
+  margin-bottom: 65px;
 }
 
 .tip-button-section {
